@@ -56,6 +56,7 @@ public class FindMedianSortedArrays {
         while (j<nums2.length ){
             numsAll[k++] = nums2[j++];
         }
+
         if(numsAll.length % 2 == 0){
             int idx1 = numsAll.length/2-1;
             int idx2 = numsAll.length/2;
@@ -66,5 +67,6 @@ public class FindMedianSortedArrays {
         return result;
     }
 
-    //todo NLogN算法
+    // NLogN算法：求第k大数
+
 }
