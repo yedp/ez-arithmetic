@@ -1,37 +1,11 @@
-package com.ez.arithmetic;
+package com.ez.arithmetic.leetcode.impl;
+
+import com.ez.arithmetic.leetcode.IFindMedianSortedArrays;
 
 import java.util.Arrays;
 
-/**
- * 4. 寻找两个有序数组的中位数
- * 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
- * <p>
- * 请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为 O(log(m + n))。
- * <p>
- * 你可以假设 nums1 和 nums2 不会同时为空。
- * <p>
- * 示例 1:
- * <p>
- * nums1 = [1, 3]
- * nums2 = [2]
- * <p>
- * 则中位数是 2.0
- * 示例 2:
- * <p>
- * nums1 = [1, 2]
- * nums2 = [3, 4]
- * <p>
- * 则中位数是 (2 + 3)/2 = 2.5
- */
-public class FindMedianSortedArrays {
 
-    public static void main(String args[]) {
-        FindMedianSortedArrays sortedArrays = new FindMedianSortedArrays();
-        int[] nums1 = {1, 3};
-        int[] nums2 = {2};
-        System.out.println(sortedArrays.solutionMidByK(nums1, nums2));
-    }
-
+public class FindMedianSortedArrays implements IFindMedianSortedArrays {
     /**
      * 合并数组,求合并数组的中位数
      * 时间复杂度O(n)
@@ -40,25 +14,12 @@ public class FindMedianSortedArrays {
      * @param nums2
      * @return
      */
-    public static float solutionMid(int[] nums1, int[] nums2) {
+    @Override
+    public float solutionMidByMerge(int[] nums1, int[] nums2) {
         float result = 0;
-        if (nums1 == null || nums2 == null) {
+        int[] numsAll = this.mergeArray(nums1, nums2);
+        if (numsAll == null || numsAll.length == 0) {
             return result;
-        }
-        int[] numsAll = new int[nums1.length + nums2.length];
-        int i = 0, j = 0, k = 0;
-        while (i < nums1.length && j < nums2.length) {
-            if (nums1[i] < nums2[j]) {
-                numsAll[k++] = nums1[i++];
-            } else {
-                numsAll[k++] = nums2[j++];
-            }
-        }
-        while (i < nums1.length) {
-            numsAll[k++] = nums1[i++];
-        }
-        while (j < nums2.length) {
-            numsAll[k++] = nums2[j++];
         }
         if (numsAll.length % 2 == 0) {
             int idx1 = numsAll.length / 2 - 1;
@@ -68,6 +29,37 @@ public class FindMedianSortedArrays {
             result = numsAll[numsAll.length / 2];
         }
         return result;
+    }
+
+    /**
+     * 合并两个数组
+     *
+     * @param a1
+     * @param a2
+     * @return
+     */
+    private int[] mergeArray(int[] a1, int[] a2) {
+        if (a1 == null || a1.length == 0) {
+            return a2;
+        } else if (a2 == null || a2.length == 0) {
+            return a1;
+        }
+        int[] numsAll = new int[a1.length + a2.length];
+        int i = 0, j = 0, k = 0;
+        while (i < a1.length && j < a2.length) {
+            if (a1[i] < a2[j]) {
+                numsAll[k++] = a1[i++];
+            } else {
+                numsAll[k++] = a2[j++];
+            }
+        }
+        while (i < a1.length) {
+            numsAll[k++] = a1[i++];
+        }
+        while (j < a2.length) {
+            numsAll[k++] = a2[j++];
+        }
+        return numsAll;
     }
 
     /**
