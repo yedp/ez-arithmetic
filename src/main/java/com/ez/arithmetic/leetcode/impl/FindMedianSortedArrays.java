@@ -62,81 +62,50 @@ public class FindMedianSortedArrays implements IFindMedianSortedArrays {
         return numsAll;
     }
 
-    /**
-     * 通过排除法，求第k大数：
-     * 两数组合集为奇数时，k为中位数；
-     * 两数组合集为偶数时，k为中位数；k k+1
-     *
-     * @param nums1
-     * @param nums2
-     * @return
-     */
-    public float solutionMidByK(int[] nums1, int[] nums2) {
+    @Override
+    public float solutionMidByTopK(int[] nums1, int[] nums2) {
         int len = nums1.length + nums2.length;
-        //是否奇数
-        boolean isOdd = len % 2 == 0 ? false : true;
-        int k = (len + 1) / 2;
-        return getK(nums1, nums2, k, isOdd);
+        //奇数中位数（偶数中位第一位）
+        int mid1 = (len + 1) / 2;
+        //中位偶数第二位（如果是奇数则是中位数）
+        int mid2 = (len + 2) / 2;
+        float mid1Value = getK(nums1, 0, nums1.length - 1, nums2, 0, nums2.length - 1, mid1);
+        float mid2Value = getK(nums1, 0, nums1.length - 1, nums2, 0, nums2.length - 1, mid2);
+        return (mid1Value + mid2Value) / 2;
 
     }
 
     /**
-     * 两个数组第K大数
+     * 获取两个有序数组第K大数据
      *
      * @param nums1
+     * @param start1
+     * @param end1
      * @param nums2
+     * @param start2
+     * @param end2
      * @param k
-     * @param isOdd 如果不是奇数，获得K+1个数和K求平均
      * @return
      */
-    private float getK(int[] nums1, int[] nums2, int k, boolean isOdd) {
-        if (nums1 == null || nums1.length == 0) {
-            return getK(nums2, k, isOdd);
+    private float getK(int[] nums1, int start1, int end1, int[] nums2, int start2, int end2, int k) {
+        int len1 = end1 - start1 + 1;
+        int len2 = end2 - start2 + 1;
+        if (len1 == 0) {
+            return nums2[start2 + k - 1];
         }
-        if (nums2 == null || nums2.length == 0) {
-            return getK(nums1, k, isOdd);
+        if (len2 == 0) {
+            return nums1[start1 + k - 1];
         }
         if (k == 1) {
-
-            if (isOdd) {
-                return nums1[0] < nums2[0] ? nums1[0] : nums2[0];
-            } else {
-                float k1Value = 0;
-                float k2Value = 0;
-                if (nums1[0] < nums2[0]) {
-                    k1Value = nums1[0];
-                    if (nums1.length >= 2) {
-                        k2Value = nums1[1] < nums2[0] ? nums1[1] : nums2[0];
-                    } else {
-                        k2Value = nums2[0];
-                    }
-                } else {
-                    k1Value = nums2[0];
-                    if (nums2.length >= 2) {
-                        k2Value = nums1[0] < nums2[1] ? nums1[0] : nums2[1];
-                    } else {
-                        k2Value = nums1[0];
-                    }
-                }
-                return (k1Value + k2Value) / 2f;
-            }
-
+            return Math.min(nums1[start1], nums2[start2]);
         }
-        int midK = k / 2;
-        int i = nums1.length < midK ? nums1.length : midK;
-        int j = nums2.length < midK ? nums2.length : midK;
-        if (nums1[i - 1] < nums2[j - 1]) {
-            return getK(Arrays.copyOfRange(nums1, i, nums1.length), nums2, k - i, isOdd);
+        int i = start1 + Math.min(len1, k / 2) - 1;
+        int j = start2 + Math.min(len2, k / 2) - 1;
+        if (nums1[i] > nums2[j]) {
+            return getK(nums1, start1, end1, nums2, j + 1, end2, k - (j - start2 + 1));
         } else {
-            return getK(nums1, Arrays.copyOfRange(nums2, j, nums2.length), k - j, isOdd);
+            return getK(nums1, i + 1, end1, nums2, start2, end2, k - (i - start1 + 1));
         }
     }
 
-    private float getK(int[] nums, int k, boolean isOdd) {
-        if (isOdd) {
-            return nums[k - 1];
-        } else {
-            return (nums[k - 1] + nums[k]) / 2f;
-        }
-    }
 }

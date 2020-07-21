@@ -22,5 +22,22 @@ package com.ez.arithmetic.leetcode;
  * 则中位数是 (2 + 3)/2 = 2.5
  */
 public interface IFindMedianSortedArrays {
+    /**
+     * 方法1：通过合并两个数组求中位数
+     *
+     * @param nums1
+     * @param nums2
+     * @return
+     */
     float solutionMidByMerge(int[] nums1, int[] nums2);
+
+    /**
+     *   过排除法，求第k大数：
+     *   两数组合集为奇数时，k为中位数；
+     *   两数组合集为偶数时，k为中位数；k k+1
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    float solutionMidByTopK(int[] nums1, int[] nums2);
 }

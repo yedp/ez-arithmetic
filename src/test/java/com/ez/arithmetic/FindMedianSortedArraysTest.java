@@ -35,6 +35,15 @@ public class FindMedianSortedArraysTest {
     }
 
 
+    @Test
+    public void solutionMidByTopK() {
+        for (TestCase testCase : testCaseList) {
+            testCase.setResult(findMedianSortedArrays.solutionMidByTopK(testCase.getA1(), testCase.getA2()));
+            Assert.assertEquals(testCase.toString(), testCase.getExpect(), testCase.getResult(), 0);
+        }
+    }
+
+
     class TestCase {
         public TestCase(int[] a1, int[] a2, float expect) {
             this.a1 = a1;
