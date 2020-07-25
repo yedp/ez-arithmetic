@@ -26,6 +26,9 @@ public class FindMedianSortedArraysTest {
         testCaseList.add(testCase);
     }
 
+    /**
+     * 解法1：通过合并两个苏数组方式合并
+     */
     @Test
     public void solutionMidByMerge() {
         for (TestCase testCase : testCaseList) {
@@ -34,7 +37,9 @@ public class FindMedianSortedArraysTest {
         }
     }
 
-
+    /**
+     * 解法2：通过求两个数组总第K大数（最优解）
+     */
     @Test
     public void solutionMidByTopK() {
         for (TestCase testCase : testCaseList) {
@@ -43,6 +48,16 @@ public class FindMedianSortedArraysTest {
         }
     }
 
+    /**
+     * 解法3：常规解法
+     */
+    @Test
+    public void solutionMitByDivide() {
+        for (TestCase testCase : testCaseList) {
+            testCase.setResult(findMedianSortedArrays.solutionMidNormal(testCase.getA1(), testCase.getA2()));
+            Assert.assertEquals(testCase.toString(), testCase.getExpect(), testCase.getResult(), 0);
+        }
+    }
 
     class TestCase {
         public TestCase(int[] a1, int[] a2, float expect) {

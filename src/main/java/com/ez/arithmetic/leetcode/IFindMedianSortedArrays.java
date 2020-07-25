@@ -40,4 +40,13 @@ public interface IFindMedianSortedArrays {
      * @return
      */
     float solutionMidByTopK(int[] nums1, int[] nums2);
+
+    /**
+     * 从中间常规解法
+     *
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    float solutionMidNormal(int nums1[], int[] nums2);
 }
