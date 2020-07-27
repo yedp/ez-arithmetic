@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943d8dba-75b7-44af-a3cc-b2e8edcb3a14" name="Default Changelist" comment="查找中位数--getK方式实现">
+    <list default="true" id="943d8dba-75b7-44af-a3cc-b2e8edcb3a14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/util/AESUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ez/arithmetic/util/AESUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IFindMedianSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IFindMedianSortedArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/FindMedianSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/FindMedianSortedArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ez/arithmetic/FindMedianSortedArraysTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ez/arithmetic/FindMedianSortedArraysTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,7 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/FindMedianSortedArrays.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="163">
@@ -34,9 +34,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ez/arithmetic/L36_IsValidSudoku.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ez/arithmetic/util/AESUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ez/arithmetic/util/AESUtilsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="57" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ez/arithmetic/FindMedianSortedArraysTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="608">
               <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IFindMedianSortedArrays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="836">
               <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
             </state>
           </provider>
@@ -76,10 +112,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IFindMedianSortedArrays.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ez/arithmetic/FindMedianSortedArraysTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/FindMedianSortedArrays.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/util/AESUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ez/arithmetic/util/AESUtilsTest.java" />
       </list>
     </option>
   </component>
@@ -103,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -141,6 +180,27 @@
               <item name="ez-arithmetic" type="b2602c69:ProjectViewProjectNode" />
               <item name="ez-arithmetic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ez-arithmetic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ez-arithmetic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ez-arithmetic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ez-arithmetic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="arithmetic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ez-arithmetic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ez-arithmetic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -158,11 +218,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="arithmetic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ez-arithmetic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ez-arithmetic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="arithmetic" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FindMedianSortedArraysTest.solutionMitByDivide">
+  <component name="RunManager" selected="JUnit.AESUtilsTest.encrypt">
     <configuration name="FindMedianSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ez.arithmetic.leetcode.impl.FindMedianSortedArrays" />
       <module name="ez-arithmetic" />
@@ -202,17 +270,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMedianSortedArraysTest.before" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AESUtilsTest.encrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ez-arithmetic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ez.arithmetic.leetcode.impl.*" />
+          <option name="PATTERN" value="com.ez.arithmetic.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ez.arithmetic" />
-      <option name="MAIN_CLASS_NAME" value="com.ez.arithmetic.FindMedianSortedArraysTest" />
-      <option name="METHOD_NAME" value="before" />
+      <option name="PACKAGE_NAME" value="com.ez.arithmetic.util" />
+      <option name="MAIN_CLASS_NAME" value="com.ez.arithmetic.util.AESUtilsTest" />
+      <option name="METHOD_NAME" value="encrypt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -268,11 +336,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AESUtilsTest.encrypt" />
         <item itemvalue="JUnit.FindMedianSortedArraysTest.solutionMitByDivide" />
         <item itemvalue="JUnit.FindMedianSortedArraysTest.solutionMidByTopK" />
         <item itemvalue="JUnit.FindMedianSortedArraysTest.solutionMidByMerge" />
         <item itemvalue="Application.FindMedianSortedArrays" />
-        <item itemvalue="JUnit.FindMedianSortedArraysTest.before" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +362,8 @@
       <workItem from="1595295469593" duration="1332000" />
       <workItem from="1595486178192" duration="166000" />
       <workItem from="1595581417122" duration="1197000" />
-      <workItem from="1595671892309" duration="1297000" />
+      <workItem from="1595671892309" duration="1329000" />
+      <workItem from="1595836768150" duration="4664000" />
     </task>
     <task id="LOCAL-00001" summary="改成maven项目">
       <created>1594895390940</created>
@@ -324,49 +393,56 @@
       <option name="project" value="LOCAL" />
       <updated>1595296784757</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="中位数求解">
+      <created>1595673211540</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595673211540</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FindMedianSortedArraysTest_solutionMidByMerge - 2020.07.17 at 09h 23m 46s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMidByMerge" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 16h 50m 01s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindMedianSortedArraysTest_solutionMidByTopK - 2020.07.20 at 10h 54m 08s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMidByTopK" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 16h 50m 16s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindMedianSortedArraysTest_solutionMidByTopK - 2020.07.20 at 10h 54m 32s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMidByTopK" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 16h 51m 09s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindMedianSortedArraysTest_solutionMidByTopK - 2020.07.20 at 10h 55m 39s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMidByTopK" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 16h 51m 17s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindMedianSortedArraysTest_solutionMidByTopK - 2020.07.20 at 10h 57m 42s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMidByTopK" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 16h 52m 16s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindMedianSortedArraysTest_solutionMidByTopK - 2020.07.20 at 10h 58m 28s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMidByTopK" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 16h 54m 39s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindMedianSortedArraysTest_solutionMidByTopK - 2020.07.20 at 11h 01m 27s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMidByTopK" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 17h 02m 24s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindMedianSortedArraysTest_solutionMidByTopK - 2020.07.20 at 11h 03m 52s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMidByTopK" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 17h 02m 39s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindMedianSortedArraysTest_solutionMidByTopK - 2020.07.21 at 09h 50m 17s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMidByTopK" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 17h 03m 10s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindMedianSortedArraysTest_solutionMitByDivide - 2020.07.25 at 18h 27m 09s.xml">
-      <configuration name="FindMedianSortedArraysTest.solutionMitByDivide" configurationId="JUnit" />
+    <history-entry file="AESUtilsTest_encrypt - 2020.07.27 at 17h 18m 31s.xml">
+      <configuration name="AESUtilsTest.encrypt" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13088000" />
+    <option name="totallyTimeSpent" value="17784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21179625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21447721" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -375,8 +451,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23087819" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.04249292" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3243626" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -405,7 +481,8 @@
     <MESSAGE value="gitigore" />
     <MESSAGE value="查找中位数" />
     <MESSAGE value="查找中位数--getK方式实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="查找中位数--getK方式实现" />
+    <MESSAGE value="中位数求解" />
+    <option name="LAST_COMMIT_MESSAGE" value="中位数求解" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -428,14 +505,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ez/arithmetic/array/IArrayBase.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ez/arithmetic/array/ArrayBase.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.70/fastjson-1.2.70.jar!/com/alibaba/fastjson/JSON.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -464,23 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IFindMedianSortedArrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ez/arithmetic/FindMedianSortedArraysTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/FindMedianSortedArrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -489,6 +541,51 @@
             <element signature="imports" expanded="true" />
             <element signature="method#mergeArray#0;class#FindMedianSortedArrays#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ez/arithmetic/FindMedianSortedArraysTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IFindMedianSortedArrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ez/arithmetic/L36_IsValidSudoku.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ez/arithmetic/util/AESUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ez/arithmetic/util/AESUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="57" />
         </state>
       </provider>
     </entry>
