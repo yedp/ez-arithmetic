@@ -1,8 +1,8 @@
 package com.ez.arithmetic;
 
 import com.alibaba.fastjson.JSON;
-import com.ez.arithmetic.leetcode.IFindMedianSortedArrays;
-import com.ez.arithmetic.leetcode.impl.FindMedianSortedArrays;
+import com.ez.arithmetic.leetcode.IL4_FindMedianSortedArrays;
+import com.ez.arithmetic.leetcode.impl.L4_FindMedianSortedArrays;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FindMedianSortedArraysTest {
-    IFindMedianSortedArrays findMedianSortedArrays = new FindMedianSortedArrays();
+    IL4_FindMedianSortedArrays findMedianSortedArrays = new L4_FindMedianSortedArrays();
     List<TestCase> testCaseList = new ArrayList<>();
 
     @Before

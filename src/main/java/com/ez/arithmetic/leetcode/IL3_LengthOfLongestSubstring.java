@@ -1,9 +1,6 @@
-package com.ez.arithmetic;
+package com.ez.arithmetic.leetcode;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import com.ez.arithmetic.leetcode.common.ListNode;
 
 /**
  * 3. 无重复字符的最长子串
@@ -26,12 +23,7 @@ import java.util.Set;
  * 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
  * 请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
  */
-public class LengthOfLongestSubstring {
-
-    public static void main(String[] args) {
-        System.out.println(solutionSlidingWindow("abcabcbb"));
-    }
-
+public interface IL3_LengthOfLongestSubstring {
     /**
      * 滑动窗口（集合）解决法：
      * 两个下标：i，j；一个集合set；一个最大值maxLength=0
@@ -47,27 +39,7 @@ public class LengthOfLongestSubstring {
      * @param s
      * @return
      */
-    public static int solutionSlidingWindow(String s) {
-        int maxLength = 0;
-        if (s == null) {
-            return maxLength;
-        }
-        int length  = s.length();
-        Set<Character> set = new HashSet<>(length);
-        int i = 0, j = 0;
-        while (j < length) {
-            Character character = s.charAt(j);
-            while (set.contains(character)) {
-                set.remove(s.charAt(i++));
-            }
-            set.add(new Character(character));
-            if (maxLength < j - i + 1) {
-                maxLength = j - i + 1;
-            }
-            j++;
-        }
-        return maxLength;
-    }
+    int solutionSlidingWindow(String s);
 
     /**
      * 滑动窗口（map）解决法：
@@ -83,26 +55,5 @@ public class LengthOfLongestSubstring {
      * @param s
      * @return
      */
-    public static int solutionSlidingWindowOptimize(String s) {
-        int maxLength = 0;
-        if (s == null) {
-            return maxLength;
-        }
-        int length  = s.length();
-        Map<Character, Integer> map = new HashMap<>(length);
-        int i = 0;
-        Integer k;
-        for (int j = 0; j < length; j++) {
-            Character character = s.charAt(j);
-            k = map.get(character);
-            if (k != null && k >=i) {
-                i = k + 1;
-            }
-            if (maxLength < j - i + 1) {
-                maxLength = j - i + 1;
-            }
-            map.put(character, j);
-        }
-        return maxLength;
-    }
+    int solutionSlidingWindowOptimize(String s);
 }

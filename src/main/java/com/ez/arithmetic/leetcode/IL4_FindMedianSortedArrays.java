@@ -21,7 +21,7 @@ package com.ez.arithmetic.leetcode;
  * <p>
  * 则中位数是 (2 + 3)/2 = 2.5
  */
-public interface IFindMedianSortedArrays {
+public interface IL4_FindMedianSortedArrays {
     /**
      * 方法1：通过合并两个数组求中位数
      *

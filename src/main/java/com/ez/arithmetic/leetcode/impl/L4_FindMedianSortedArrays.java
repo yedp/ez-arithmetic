@@ -1,11 +1,9 @@
 package com.ez.arithmetic.leetcode.impl;
 
-import com.ez.arithmetic.leetcode.IFindMedianSortedArrays;
-
-import java.util.Arrays;
+import com.ez.arithmetic.leetcode.IL4_FindMedianSortedArrays;
 
 
-public class FindMedianSortedArrays implements IFindMedianSortedArrays {
+public class L4_FindMedianSortedArrays implements IL4_FindMedianSortedArrays {
     /**
      * 合并数组,求合并数组的中位数
      * 时间复杂度O(n)
