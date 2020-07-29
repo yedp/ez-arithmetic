@@ -1,6 +1,7 @@
 package com.ez.arithmetic.leetcode;
 
 /**
+ * @author daoping.ye
  * 1. 两数之和
  * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
  * <p>
@@ -17,7 +18,7 @@ package com.ez.arithmetic.leetcode;
  * 通过次数1,012,342提交次数2,097,797
  * <p>
  */
-public interface IL1_TwoSum {
+public interface IL1TwoSum {
     /**
      * 方法一：暴力破解法
      *

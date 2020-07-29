@@ -1,11 +1,16 @@
 package com.ez.arithmetic.leetcode.impl;
 
-import com.ez.arithmetic.leetcode.IL1_TwoSum;
+import com.ez.arithmetic.leetcode.IL1TwoSum;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class L1_TwoSum implements IL1_TwoSum {
+/**
+ * @Author  daoping.ye
+ * @Date    2020/7/29 14:49
+ * @Desc    
+ */
+public class L1TwoSum implements IL1TwoSum {
     @Override
     public int[] exhaustSolution(int[] nums, int target) {
         int[] rs = null;

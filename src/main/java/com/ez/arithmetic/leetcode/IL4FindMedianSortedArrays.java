@@ -1,6 +1,7 @@
 package com.ez.arithmetic.leetcode;
 
 /**
+ * @author daoping.ye
  * 4. 寻找两个有序数组的中位数
  * 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
  * <p>
@@ -21,7 +22,7 @@ package com.ez.arithmetic.leetcode;
  * <p>
  * 则中位数是 (2 + 3)/2 = 2.5
  */
-public interface IL4_FindMedianSortedArrays {
+public interface IL4FindMedianSortedArrays {
     /**
      * 方法1：通过合并两个数组求中位数
      *

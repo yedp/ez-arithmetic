@@ -3,6 +3,7 @@ package com.ez.arithmetic.leetcode;
 import com.ez.arithmetic.leetcode.common.ListNode;
 
 /**
+ * @author daoping.ye
  * 3. 无重复字符的最长子串
  * 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
  * <p>
@@ -23,7 +24,7 @@ import com.ez.arithmetic.leetcode.common.ListNode;
  * 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
  * 请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
  */
-public interface IL3_LengthOfLongestSubstring {
+public interface IL3LengthOfLongestSubstring {
     /**
      * 滑动窗口（集合）解决法：
      * 两个下标：i，j；一个集合set；一个最大值maxLength=0

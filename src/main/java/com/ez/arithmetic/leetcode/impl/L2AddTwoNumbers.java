@@ -1,9 +1,13 @@
 package com.ez.arithmetic.leetcode.impl;
 
-import com.ez.arithmetic.leetcode.IL2_AddTwoNumbers;
+import com.ez.arithmetic.leetcode.IL2AddTwoNumbers;
 import com.ez.arithmetic.leetcode.common.ListNode;
-
-public class L2_AddTwoNumbers implements IL2_AddTwoNumbers {
+/**
+ * @Author  daoping.ye
+ * @Date    2020/7/29 14:52
+ * @Desc    
+ */
+public class L2AddTwoNumbers implements IL2AddTwoNumbers {
     @Override
     public ListNode exhaustSolution(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);

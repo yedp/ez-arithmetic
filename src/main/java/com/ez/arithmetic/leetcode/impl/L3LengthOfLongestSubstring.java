@@ -1,13 +1,17 @@
 package com.ez.arithmetic.leetcode.impl;
 
-import com.ez.arithmetic.leetcode.IL3_LengthOfLongestSubstring;
+import com.ez.arithmetic.leetcode.IL3LengthOfLongestSubstring;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
-public class L3_LengthOfLongestSubstring implements IL3_LengthOfLongestSubstring {
+/**
+ * @Author  daoping.ye
+ * @Date    2020/7/29 14:49
+ * @Desc    
+ */
+public class L3LengthOfLongestSubstring implements IL3LengthOfLongestSubstring {
 
     @Override
     public int solutionSlidingWindow(String s) {

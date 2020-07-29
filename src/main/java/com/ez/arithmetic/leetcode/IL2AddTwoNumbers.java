@@ -3,6 +3,7 @@ package com.ez.arithmetic.leetcode;
 import com.ez.arithmetic.leetcode.common.ListNode;
 
 /**
+ * @author daoping.ye
  * 2. 两数相加
  * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
  * <p>
@@ -16,7 +17,7 @@ import com.ez.arithmetic.leetcode.common.ListNode;
  * 输出：7 -> 0 -> 8
  * 原因：342 + 465 = 807
  */
-public interface IL2_AddTwoNumbers {
+public interface IL2AddTwoNumbers {
     /**
      * 暴力法
      * @param l1
