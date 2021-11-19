@@ -9,7 +9,7 @@ import com.ez.arithmetic.leetcode.common.ListNode;
  */
 public class L2AddTwoNumbers implements IL2AddTwoNumbers {
     @Override
-    public ListNode exhaustSolution(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);
         ListNode p = head;
         int isIncr = 0;

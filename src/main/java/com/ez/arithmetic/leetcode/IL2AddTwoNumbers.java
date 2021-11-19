@@ -18,11 +18,6 @@ import com.ez.arithmetic.leetcode.common.ListNode;
  * 原因：342 + 465 = 807
  */
 public interface IL2AddTwoNumbers {
-    /**
-     * 暴力法
-     * @param l1
-     * @param l2
-     * @return
-     */
-    ListNode exhaustSolution(ListNode l1, ListNode l2);
+
+    ListNode addTwoNumbers(ListNode l1, ListNode l2);
 }

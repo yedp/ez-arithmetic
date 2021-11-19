@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="943d8dba-75b7-44af-a3cc-b2e8edcb3a14" name="Default Changelist" comment="之前代码调整">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/L1TwoSumV1Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/L1TwoSumV3HashImprove.java" afterDir="false" />
+    <list default="true" id="943d8dba-75b7-44af-a3cc-b2e8edcb3a14" name="Default Changelist" comment="L1两数之和">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/L3LengthOfLongestSubstringV1SlidingWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ez-arithmetic.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ez/arithmetic/L36_IsValidSudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ez/arithmetic/L36_IsValidSudoku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IL1TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IL1TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IL5LongestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IL5LongestPalindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/L1TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/L1TwoSumV2Hash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IL2AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IL2AddTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IL3LengthOfLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/IL3LengthOfLongestSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/L2AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/L2AddTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/L3LengthOfLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ez/arithmetic/leetcode/impl/L3LengthOfLongestSubstringV2SlidingWindowOptimize.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,6 +219,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -248,15 +250,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -409,7 +409,10 @@
       <workItem from="1595993374344" duration="1293000" />
       <workItem from="1596002523299" duration="2781000" />
       <workItem from="1636506803836" duration="458000" />
-      <workItem from="1636507305068" duration="537000" />
+      <workItem from="1636507305068" duration="590000" />
+      <workItem from="1636594047253" duration="167000" />
+      <workItem from="1637052839585" duration="1000" />
+      <workItem from="1637285641420" duration="1617000" />
     </task>
     <task id="LOCAL-00001" summary="改成maven项目">
       <created>1594895390940</created>
@@ -460,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595993826907</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="L1两数之和">
+      <created>1636507890698</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636507890698</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -556,7 +566,8 @@
     <MESSAGE value="中位数求解" />
     <MESSAGE value="对称加密" />
     <MESSAGE value="之前代码调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="之前代码调整" />
+    <MESSAGE value="L1两数之和" />
+    <option name="LAST_COMMIT_MESSAGE" value="L1两数之和" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
